@@ -1,14 +1,16 @@
-package toc.Eclasses.Ex1;
+package toc.Eclasses.Ex2;
 
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class LottoEx {
+public class CollectionLottoEx {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("몇 개를 구매 할건가요? ");
         int num = sc.nextInt();
+
+        List<Integer> allNumbers = new ArrayList<>();
 
         IntStream.range(0, num)
                 .forEach(i -> {
@@ -21,7 +23,16 @@ public class LottoEx {
                             .boxed()
                             .collect(Collectors.toList());
                     System.out.println(lotto);
+                    allNumbers.addAll(lotto);
                 });
+
+        // 1~45 각각 몇 개 나왔는지 출력
+        System.out.println("\n1~45 각 숫자별 등장 횟수:");
+        for (int i = 1; i <= 45; i++) {
+            final int numToCheck = i; // i 값을 final 변수에 복사
+            long count = allNumbers.stream().filter(n -> n == numToCheck).count();
+            System.out.printf("%2d: %d\n", i, count);
+        }
         sc.close();
     }
 }
