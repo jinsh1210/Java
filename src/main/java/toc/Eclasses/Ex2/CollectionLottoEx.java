@@ -10,7 +10,8 @@ public class CollectionLottoEx {
         System.out.print("몇 개를 구매 할건가요? ");
         int num = sc.nextInt();
 
-        List<Integer> allNumbers = new ArrayList<>();
+        //로또 전체 담을 리스트
+        List<Integer> all = new ArrayList<>();
 
         IntStream.range(0, num)
                 .forEach(i -> {
@@ -23,16 +24,17 @@ public class CollectionLottoEx {
                             .boxed()
                             .collect(Collectors.toList());
                     System.out.println(lotto);
-                    allNumbers.addAll(lotto);
+                    all.addAll(lotto);
                 });
 
         // 1~45 각각 몇 개 나왔는지 출력
         System.out.println("\n1~45 각 숫자별 등장 횟수:");
         for (int i = 1; i <= 45; i++) {
             final int numToCheck = i; // i 값을 final 변수에 복사
-            long count = allNumbers.stream().filter(n -> n == numToCheck).count();
+            long count = all.stream().filter(n -> n == numToCheck).count();
             System.out.printf("%2d: %d\n", i, count);
         }
+
         sc.close();
     }
 }
