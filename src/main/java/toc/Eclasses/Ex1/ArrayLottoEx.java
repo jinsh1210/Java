@@ -38,8 +38,8 @@ public class ArrayLottoEx {
                 }
             }
             //출력
-            for (int k = 0; k < lotto.length; k++) {
-                System.out.print(lotto[k] + " ");
+            for (int j : lotto) {
+                System.out.print(j + " ");
             }
             System.out.println();
         }

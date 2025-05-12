@@ -34,8 +34,7 @@ public class LambdaFormat {
         System.out.println(res3);
 
         Func4 f4 = (a,b) -> {
-            String res4 = a + " " + b;
-            return res4;
+            return a + " " + b;
         };
         String res4 = f4.method("인하공전", "컴시과");
         System.out.println(res4);
