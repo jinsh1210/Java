@@ -1,5 +1,5 @@
 <h1 align="center">
-    Java Class / TOC File
+    Java Class / TOC File (IntelliJ)
 </h1>
 
 <h4 align="center">
@@ -38,3 +38,8 @@
 
 ```bash
 git clone https://github.com/jinsh1210/Java.git
+```
+
+### 2. 사용하고자 하는 브랜치 Download ZIP 받아서 기존 src파일에 붙여넣기
+
+![브랜치 화면](src/main/java/classes/GUI/img/image.png)
