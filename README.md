@@ -1,5 +1,5 @@
 <h1 align="center">
-    Java Class / TOC File
+    Java Class / TOC File (Eclipse)
 </h1>
 
 <h4 align="center">
