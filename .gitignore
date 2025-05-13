@@ -9,6 +9,9 @@
 # Eclipse build directory
 /bin/
 
+# teamProject
+/src/main/java/classes/teamProject/
+
 # OS-specific files
 .DS_Store
 Thumbs.db

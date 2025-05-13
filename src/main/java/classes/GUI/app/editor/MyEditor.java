@@ -141,15 +141,15 @@ public class MyEditor extends JFrame implements ActionListener {
 		contentPane.add(sp, BorderLayout.CENTER);
 		
 		JButton btnNew = new JButton("");
-		btnNew.setIcon(new ImageIcon("C:\\Coding\\JavaEclipse\\src\\main\\java\\classes\\GUI\\img\\new.png"));
+		btnNew.setIcon(new ImageIcon("C:\\Coding\\Java_Eclipse\\src\\main\\java\\classes\\GUI\\img\\new.png"));
 		toolBar.add(btnNew);
 		
 		JButton btnOpen = new JButton("");
-		btnOpen.setIcon(new ImageIcon("C:\\Coding\\JavaEclipse\\src\\main\\java\\classes\\GUI\\img\\open.png"));
+		btnOpen.setIcon(new ImageIcon("C:\\Coding\\Java_Eclipse\\src\\main\\java\\classes\\GUI\\img\\open.png"));
 		toolBar.add(btnOpen);
 		
 		JButton btnSave = new JButton("");
-		btnSave.setIcon(new ImageIcon("C:\\Coding\\JavaEclipse\\src\\main\\java\\classes\\GUI\\img\\save.png"));
+		btnSave.setIcon(new ImageIcon("C:\\Coding\\Java_Eclipse\\src\\main\\java\\classes\\GUI\\img\\save.png"));
 		toolBar.add(btnSave);
 		
 		JButton btnExit = new JButton("");
@@ -158,7 +158,7 @@ public class MyEditor extends JFrame implements ActionListener {
 				exitFunc();
 			}
 		});
-		btnExit.setIcon(new ImageIcon("C:\\Coding\\JavaEclipse\\src\\main\\java\\classes\\GUI\\img\\exit.png"));
+		btnExit.setIcon(new ImageIcon("C:\\Coding\\Java_Eclipse\\src\\main\\java\\classes\\GUI\\img\\exit.png"));
 		toolBar.add(btnExit);
 	}
 	
