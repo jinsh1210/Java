@@ -42,5 +42,4 @@ git clone https://github.com/jinsh1210/Java.git
 
 ### 2. 사용하고자 하는 브랜치 Download ZIP 받아서 기존 src파일에 붙여넣기
 
-![브랜치 선택](src/main/java/classes/GUI/img/HowToSelect.png)
-![다운로드 ZIP](src/main/java/classes/GUI/img/HowToDownload.png)
+<img src="src/main/java/classes/GUI/img/HowToSelect.png" width="300"/> <img src="src/main/java/classes/GUI/img/HowToDownload.png" width="300"/>
