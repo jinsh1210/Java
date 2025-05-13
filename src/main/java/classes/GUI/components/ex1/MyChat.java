@@ -1,5 +1,7 @@
 package classes.GUI.components.ex1;
 
+import classes.GUI.app.editor.MyEditor;
+
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -19,6 +21,14 @@ public class MyChat {
     private JFrame frmMychat;
     private JTextField tfInput;
     private JTextArea taChat;
+    private MyEditor myEditor;
+
+    public JFrame getFrmMychat() {
+        return frmMychat;
+    }
+    public JTextField getTfInput() {
+        return tfInput;
+    }
 
     /**
      * Launch the application.
@@ -27,7 +37,7 @@ public class MyChat {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    MyChat window = new MyChat();
+                    MyChat window = new MyChat("",null);
                     window.frmMychat.setVisible(true);
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -39,7 +49,8 @@ public class MyChat {
     /**
      * Create the application.
      */
-    public MyChat() {
+    public MyChat(String title, MyEditor myEditor) {
+        this.myEditor = myEditor;
         initialize();
     }
 
@@ -91,7 +102,6 @@ public class MyChat {
         taChat.setEditable(false);
         taChat.setLineWrap(true);
         JScrollPane sp = new JScrollPane(taChat);
-
         frmMychat.getContentPane().add(sp, BorderLayout.CENTER);
     }
 
@@ -100,5 +110,7 @@ public class MyChat {
         taChat.append("[msg] : " + input + "\n");
         tfInput.setText("");
         tfInput.requestFocus();
+
+        myEditor.getTaEditor().append("[msg] : " + input + "\n");
     }
 }

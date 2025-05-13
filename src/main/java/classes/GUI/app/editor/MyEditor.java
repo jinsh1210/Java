@@ -1,5 +1,10 @@
 package classes.GUI.app.editor;
 
+import classes.GUI.components.ex1.MyChat;
+import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
+import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
+import org.fife.ui.rtextarea.RTextScrollPane;
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -20,9 +25,15 @@ import javax.swing.JToolBar;
 import javax.swing.JButton;
 import javax.swing.ImageIcon;
 
-public class MyEditor extends JFrame {
+public class MyEditor extends JFrame implements ActionListener {
 
 	private JPanel contentPane;
+	private JMenuItem menuItemChat;
+	private RSyntaxTextArea taEditor;
+
+	public RSyntaxTextArea getTaEditor() {
+		return taEditor;
+	}
 
 	/**
 	 * Launch the application.
@@ -83,7 +94,15 @@ public class MyEditor extends JFrame {
 		JMenu menuApps = new JMenu("Apps");
 		menuBar.add(menuApps);
 		
-		JMenuItem menuItemChat = new JMenuItem("MyChat");
+		menuItemChat = new JMenuItem("MyChat");
+		menuItemChat.addActionListener(this);
+				/*(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				MyChat chat = new MyChat("채팅창",this);
+				chat.getFrmMychat().setVisible(true);
+				chat.getTfInput().setText("홍길동");
+			}
+		});*/
 		menuApps.add(menuItemChat);
 		
 		JMenu menuInfo = new JMenu("Help");
@@ -105,14 +124,21 @@ public class MyEditor extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(new BorderLayout(0, 0));
 		
-		JScrollPane scrollPane = new JScrollPane();
-		contentPane.add(scrollPane, BorderLayout.CENTER);
-		
-		JTextArea textArea = new JTextArea();
-		scrollPane.setViewportView(textArea);
-		
+		/*JScrollPane scrollPane = new JScrollPane();
+
+
+		JTextArea textArea = new JTextArea();*/
+
+		RSyntaxTextArea taEditor = new RSyntaxTextArea();
+		taEditor.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_JAVA);
+		taEditor.setCodeFoldingEnabled(true);
+
+		RTextScrollPane sp = new RTextScrollPane(taEditor);
+
 		JToolBar toolBar = new JToolBar();
-		scrollPane.setColumnHeaderView(toolBar);
+		sp.setColumnHeaderView(toolBar);
+
+		contentPane.add(sp, BorderLayout.CENTER);
 		
 		JButton btnNew = new JButton("");
 		btnNew.setIcon(new ImageIcon("C:\\Coding\\JavaEclipse\\src\\main\\java\\classes\\GUI\\img\\new.png"));
@@ -140,6 +166,17 @@ public class MyEditor extends JFrame {
 		int res = JOptionPane.showConfirmDialog(this,"정말 끝낼까요?",
 				"끝내기", JOptionPane.YES_NO_OPTION);
 		if(res == JOptionPane.YES_OPTION) System.exit(0);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource() == menuItemChat){
+			System.out.println("aaaa");
+			MyChat chat = new MyChat("채팅창",this);
+			chat.getFrmMychat().setVisible(true);
+			chat.getTfInput().setText("홍길동");
+//			this.setVisible(false);
+		}
 	}
 
 }
