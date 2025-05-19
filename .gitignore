@@ -13,6 +13,7 @@
 /src/main/java/classes/teamProject/
 
 # OS-specific files
+/.vscode/
 .DS_Store
 Thumbs.db
 
