@@ -32,6 +32,7 @@ public class DB {
         return instance;
     }
     
+    // 정보 입력
     public boolean inputStudent(String name, int score, String studentid) {
         String sql = "INSERT INTO student (name, score, studentid) VALUES (?, ?, ?)";
         try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
