@@ -1,4 +1,4 @@
-package classes.D_classes.cast.Ex1;
+/* package classes.D_classes.cast.Ex1;
 
 public class CastEx {
     public static void main(String[] args) {
@@ -22,3 +22,4 @@ public class CastEx {
         a = (int) d;
     }
 }
+ */

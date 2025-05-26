@@ -28,7 +28,7 @@ public class EventFrame extends JFrame implements ActionListener, MouseListener 
     }
 
     public static void main(String[] args) {
-        EventFrame frame = new EventFrame("이벤트 프레임");
+        // EventFrame frame = new EventFrame("이벤트 프레임");
     }
 
     @Override
@@ -58,8 +58,8 @@ public class EventFrame extends JFrame implements ActionListener, MouseListener 
 
     @Override
     public void mouseEntered(MouseEvent e) {
-        int x = e.getX();
-        int y = e.getY();
+        // int x = e.getX();
+        // int y = e.getY();
 //        System.out.println("( " + x + ", " + y+" )");
         System.out.println("IN");
         button.setBackground(Color.red);

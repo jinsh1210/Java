@@ -1,4 +1,4 @@
-package classes.z_Exam.ex3.num2;
+/* package classes.z_Exam.ex3.num2;
 
 public class ElectricCar extends Vehicle {
     private int batteryCapacity;
@@ -12,3 +12,4 @@ public class ElectricCar extends Vehicle {
         System.out.println("전기차가 조용히 출발합니다.");
     }
 }
+ */

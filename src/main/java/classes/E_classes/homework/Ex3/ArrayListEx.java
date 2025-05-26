@@ -27,5 +27,7 @@ public class ArrayListEx {
                 longestIndex = i;
         }
         System.out.println("\n가장 긴 이름은 : " + a.get(longestIndex));
+
+        scanner.close();
     }
 }

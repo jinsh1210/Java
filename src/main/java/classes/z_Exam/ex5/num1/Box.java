@@ -1,4 +1,4 @@
-package classes.z_Exam.ex5.num1;
+/* package classes.z_Exam.ex5.num1;
 
 public class Box<T> {
     private Object[] items;
@@ -28,3 +28,4 @@ public class Box<T> {
         return size;
     }
 }
+ */

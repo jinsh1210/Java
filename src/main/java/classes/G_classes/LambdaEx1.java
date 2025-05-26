@@ -1,4 +1,4 @@
-package classes.G_classes;
+/* package classes.G_classes;
 
 import java.io.StringBufferInputStream;
 import java.util.*;
@@ -20,3 +20,4 @@ public class LambdaEx1 {
 
     }
 }
+ */

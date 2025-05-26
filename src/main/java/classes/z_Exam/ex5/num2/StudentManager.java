@@ -1,4 +1,4 @@
-package classes.z_Exam.ex5.num2;
+/* package classes.z_Exam.ex5.num2;
 
 import java.util.LinkedList;
 
@@ -28,3 +28,4 @@ public class StudentManager {
         }
     }
 }
+ */

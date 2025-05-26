@@ -13,6 +13,6 @@ public class FrameTemp extends JFrame {
     }
 
     public static void main(String[] args) {
-        FrameTemp frame = new FrameTemp("Temp Frame");
+        // FrameTemp frame = new FrameTemp("Temp Frame");
     }
 }

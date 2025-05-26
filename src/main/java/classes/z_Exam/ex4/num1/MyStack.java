@@ -1,4 +1,4 @@
-package classes.z_Exam.ex4.num1;
+/* package classes.z_Exam.ex4.num1;
 
 public class MyStack <T>{
     private Object[] stack;
@@ -28,3 +28,4 @@ public class MyStack <T>{
         return top == 0;
     }
 }
+ */

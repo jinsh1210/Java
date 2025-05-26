@@ -7,7 +7,6 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder //요물
-@ToString
 
 public class person {
     // 필드

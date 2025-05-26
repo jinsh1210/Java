@@ -34,5 +34,6 @@ public class HashMapDicEx {
             else
                 System.out.println(kor);
         }
+        scanner.close();
     }
 }

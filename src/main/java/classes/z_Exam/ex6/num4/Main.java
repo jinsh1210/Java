@@ -1,4 +1,4 @@
-package classes.z_Exam.ex6.num4;
+/* package classes.z_Exam.ex6.num4;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,3 +19,4 @@ public class Main {
         System.out.println(queue.retrieveItem());
     }
 }
+ */

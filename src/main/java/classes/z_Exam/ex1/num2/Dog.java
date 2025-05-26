@@ -1,4 +1,4 @@
-package classes.z_Exam.ex1.num2;
+/* package classes.z_Exam.ex1.num2;
 
 public class Dog extends Animal{
     private String breed;
@@ -12,3 +12,4 @@ public class Dog extends Animal{
         System.out.println("멍멍!");
     }
 }
+ */

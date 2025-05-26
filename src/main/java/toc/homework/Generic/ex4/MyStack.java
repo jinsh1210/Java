@@ -1,4 +1,4 @@
-package toc.homework.Generic.ex4;
+/* package toc.homework.Generic.ex4;
 import java.util.Vector;
 public class MyStack <T>{
     Vector v = new Vector();
@@ -12,3 +12,4 @@ public class MyStack <T>{
         return v.isEmpty();
     }
 }
+ */

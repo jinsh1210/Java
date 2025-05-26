@@ -8,7 +8,7 @@ public class MyGenArray<T> {
     private T[] arr;
 
     public MyGenArray(int size) {
-        this.arr = (T[]) new Object[size];
+        // this.arr = (T[]) new Object[size];
     }
 
     public void set(int index, T val) {

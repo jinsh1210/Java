@@ -1,4 +1,4 @@
-package classes.z_Exam.ex4.num3;
+/* package classes.z_Exam.ex4.num3;
 
 public class BankAccountMain {
     public static void main(String[] args) {
@@ -15,3 +15,4 @@ public class BankAccountMain {
 
     }
 }
+ */

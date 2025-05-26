@@ -7,7 +7,7 @@ public class StudentContainer<T> {
     private LinkedList<T> list;
 
     public StudentContainer() {
-        array = (T[]) new Object[5];
+        // array = (T[]) new Object[5];
         list = new LinkedList<>();
     }
     public void add(T data){

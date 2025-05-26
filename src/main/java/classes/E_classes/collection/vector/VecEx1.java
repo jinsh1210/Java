@@ -4,7 +4,7 @@ import java.util.Vector;
 public class VecEx1 {
     public static void main(String[] args) {
 
-        var vec = new Vector<>();
+        // var vec = new Vector<>();
 
 
         Vector<Integer> intVec = new Vector<Integer>(3);

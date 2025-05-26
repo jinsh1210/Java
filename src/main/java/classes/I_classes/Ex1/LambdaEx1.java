@@ -1,7 +1,5 @@
 package classes.I_classes.Ex1;
 
-import toc.Eclasses.Ex1.CollectionLottoEx;
-
 import java.util.*;
 
 public class LambdaEx1 {

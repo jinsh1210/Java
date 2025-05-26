@@ -1,6 +1,5 @@
 package classes.z_Exam.ex1.num4;
 
-import java.util.ArrayList;
 
 public class Main {
     public static <T> void printArray(T[] array) {

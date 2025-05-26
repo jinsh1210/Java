@@ -1,4 +1,4 @@
-package classes.C_classes.Inheritance.Ex3;
+/* package classes.C_classes.Inheritance.Ex3;
 
 public class ABMain {
     public static void main(String[] args) {
@@ -7,3 +7,4 @@ public class ABMain {
 
     }
 }
+ */

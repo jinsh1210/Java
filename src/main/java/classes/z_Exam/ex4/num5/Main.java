@@ -1,4 +1,4 @@
-package classes.z_Exam.ex4.num5;
+/* package classes.z_Exam.ex4.num5;
 
 public class Main {
 
@@ -20,3 +20,4 @@ public class Main {
         System.out.println(average);
     }
 }
+ */

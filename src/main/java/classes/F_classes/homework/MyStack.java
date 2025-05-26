@@ -1,4 +1,4 @@
-package classes.F_classes.homework;
+/* package classes.F_classes.homework;
 
 public class MyStack {
     public static void main(String[] args) {
@@ -20,3 +20,4 @@ public class MyStack {
     }
 
 }
+ */

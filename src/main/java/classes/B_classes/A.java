@@ -1,4 +1,4 @@
-package classes.B_classes;
+/* package classes.B_classes;
 
 public class A {
     private int a;
@@ -13,3 +13,4 @@ public class A {
 
 
 }
+ */

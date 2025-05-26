@@ -1,4 +1,4 @@
-package classes.B_classes;
+/* package classes.B_classes;
 
 public class B extends A {
     private int b;
@@ -9,3 +9,4 @@ public class B extends A {
         System.out.println("생성자 B");
     }
 }
+ */

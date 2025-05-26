@@ -1,7 +1,6 @@
 package classes.z_Exam.ex5.num4;
 
 import java.util.LinkedList;
-import java.util.Stack;
 
 public class PlaylistManager {
     private LinkedList<String> playlist;

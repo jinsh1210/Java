@@ -39,9 +39,7 @@ public class MyFrame extends JFrame {
     }
 
     public static void main(String[] args) {
-        MyFrame myFrame = new MyFrame("컴포넌트 추가");
-
-
+        // MyFrame myFrame = new MyFrame("컴포넌트 추가");
 
     }
 }

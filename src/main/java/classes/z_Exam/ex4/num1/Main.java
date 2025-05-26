@@ -1,4 +1,4 @@
-package classes.z_Exam.ex4.num1;
+/* package classes.z_Exam.ex4.num1;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,3 +15,4 @@ public class Main {
         }
     }
 }
+ */

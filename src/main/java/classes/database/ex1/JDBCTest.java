@@ -23,7 +23,7 @@ public class JDBCTest {
 			pstmt.setInt(2, 12);
 			pstmt.setDouble(3, 168.3);
 
-			int res = pstmt.executeUpdate();
+			// int res = pstmt.executeUpdate();
 
 			// db 출력
 			String sql = "SELECT * FROM member";

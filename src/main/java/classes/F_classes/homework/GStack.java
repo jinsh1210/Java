@@ -13,10 +13,10 @@ public class GStack<T> {
         stck[tos] = item;
         tos++;
     }
-    public T pop() {
-        if(tos == 0)
-            return null;
-        tos--;
-        return (T)stck[tos];
-    }
+    // public T pop() {
+    //     if(tos == 0)
+    //         return null;
+    //     tos--;
+    //     return (T)stck[tos];
+    // }
 }

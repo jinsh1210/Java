@@ -1,4 +1,4 @@
-package classes.z_Exam.ex1.num2;
+/* package classes.z_Exam.ex1.num2;
 
 public class Animal {
     private String name;
@@ -11,3 +11,4 @@ public class Animal {
         System.out.println("동물이 소리를 냅니다.");
     }
 }
+ */

@@ -1,4 +1,4 @@
-package classes.z_Exam.ex4.num3;
+/* package classes.z_Exam.ex4.num3;
 
 public class BankAccount {
     private String accountNo;
@@ -30,3 +30,4 @@ public class BankAccount {
         System.out.println("예금주: " + owner + " 현재 잔액: " + balance);
     }
 }
+ */

@@ -5,9 +5,9 @@ import java.util.*;
 public abstract class DataProcessor<T> {
     public void processData(List<T> data){
         List<T> result = new LinkedList<>();
-        Queue<T> queue = new LinkedList<>();
-        Stack<T> stack = new Stack<>();
-        Vector<T> vector = new Vector<>();
+        // Queue<T> queue = new LinkedList<>();
+        // Stack<T> stack = new Stack<>();
+        // Vector<T> vector = new Vector<>();
         for(T item : data){
             if(validate(item)){
                 result.add(transform(item));
