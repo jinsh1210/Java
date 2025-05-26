@@ -1,9 +1,6 @@
 package toc.gui.ex3;
 
-import java.awt.EventQueue;
-
 import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
@@ -20,8 +17,6 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.Vector;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
 public class DbTable extends JFrame {
 
@@ -112,8 +107,6 @@ public class DbTable extends JFrame {
 
 				tableModel.setRowCount(0);
 				
-				
-
 				while (rs.next()) {
 					Object[] rowData = { rs.getInt("id"), rs.getString("name"), rs.getInt("stock"), rs.getInt("price"),
 							rs.getString("kind") };
