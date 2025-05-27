@@ -106,7 +106,7 @@ public class DbTable extends JFrame {
 				comModel.addAll(cbNames);
 
 				tableModel.setRowCount(0);
-				
+
 				while (rs.next()) {
 					Object[] rowData = { rs.getInt("id"), rs.getString("name"), rs.getInt("stock"), rs.getInt("price"),
 							rs.getString("kind") };

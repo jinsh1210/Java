@@ -25,8 +25,10 @@ public class DB {
 		}
 	}
 
+	// SELECT
 	public static ResultSet executeQuery(String sql, Object... params) {
-		try (PreparedStatement pstmt = conn.prepareStatement(sql);) {
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(sql);
 			setParams(pstmt, params);
 			return pstmt.executeQuery();
 		} catch (SQLException e) {
@@ -34,10 +36,10 @@ public class DB {
 			return null;
 		}
 	}
-	
-	public static int excuteUpdate(String sql, Object... params) {
 
-		try (PreparedStatement pstmt = conn.prepareStatement(sql);) {
+	// INSERT, UPDATE, DELETE
+	public static int executeUpdate(String sql, Object... params) {
+		try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
 			setParams(pstmt, params);
 			return pstmt.executeUpdate();
 		} catch (SQLException e) {
@@ -46,15 +48,10 @@ public class DB {
 		}
 	}
 
-	private static void setParams(PreparedStatement pstmt, Object... params) {
+	private static void setParams(PreparedStatement pstmt, Object... params) throws SQLException {
 		for (int i = 0; i < params.length; i++) {
-			try {
-				pstmt.setObject(i + 1, params[i]);
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
+			pstmt.setObject(i + 1, params[i]);
 		}
-
 	}
 
 }

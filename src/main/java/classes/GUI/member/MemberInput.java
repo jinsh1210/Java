@@ -1,7 +1,5 @@
 package classes.GUI.member;
 
-import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -19,22 +17,9 @@ public class MemberInput extends JFrame {
 	private JTextField ageField;
 	private JTextField heightField;
 
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					MemberInput frame = new MemberInput();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
 	public MemberInput() {
 		setTitle("사용자 입력 폼");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 429, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -78,14 +63,22 @@ public class MemberInput extends JFrame {
 		JButton btnInput = new JButton("입력");
 		btnInput.addActionListener(e -> {
 			String insertSql = "INSERT INTO member (name, age, height) VALUES (?, ?, ?)";
-			
+
 			String name = nameField.getText();
-			int age = Integer.parseInt(ageField.getText());
-			double height = Double.parseDouble(heightField.getText());
-			
-			int res = DB.excuteUpdate(insertSql, name, age, height);
-			
-			if(res >0) {
+			int age;
+			double height;
+
+			try {
+				age = Integer.parseInt(ageField.getText());
+				height = Double.parseDouble(heightField.getText());
+			} catch (NumberFormatException ex) {
+				JOptionPane.showMessageDialog(null, "나이와 키는 숫자로 입력하세요.");
+				return;
+			}
+
+			int res = DB.executeUpdate(insertSql, name, age, height); // 오타 수정
+
+			if (res > 0) {
 				JOptionPane.showMessageDialog(null, "입력 성공");
 			} else {
 				JOptionPane.showMessageDialog(null, "입력 실패");
