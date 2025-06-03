@@ -114,7 +114,6 @@ public class ChatClient extends JFrame {
 			while (true) {
 				inMsg = in.readLine();
 				taChat.append("[서버] : " + inMsg + "\n");
-
 			}
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
@@ -129,11 +128,9 @@ public class ChatClient extends JFrame {
 			// #id#1#outMsg#id
 			out.write(outMsg + "\n");
 			out.flush();
-
 			if (outMsg.equalsIgnoreCase("bye")) {
 				this.frmChatClient.dispose();
 			}
-
 			tfInput.setText("");
 			tfInput.requestFocus();
 		} catch (IOException e) {

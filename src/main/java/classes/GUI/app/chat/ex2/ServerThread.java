@@ -21,8 +21,10 @@ public class ServerThread extends Thread {
     @Override
     public void run() {
         try {
-            BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            out = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+            BufferedReader in = new BufferedReader(
+                    new InputStreamReader(socket.getInputStream()));
+            out = new BufferedWriter(
+                    new OutputStreamWriter(socket.getOutputStream()));
             String inMsg = null;
             while (true) {
                 inMsg = in.readLine();
